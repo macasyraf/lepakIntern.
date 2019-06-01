@@ -21,6 +21,8 @@ public class profile_sector extends AppCompatActivity
             switch (item.getItemId())
             {
                 case R.id.navigation_top:
+                    Intent inMain = new Intent(profile_sector.this, main_sector.class);
+                    startActivity(inMain);
                     return true;
                 case R.id.navigation_browse:
                     return true;
