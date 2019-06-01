@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBackground">#313744</color>
+    <color name="colorLogin">#1AD2E3</color>
+    <color name="colorField">#2A313D</color>
+    <color name="colorHeaven">#FFFFFF</color>
+    <color name="colorFeminine">#CD5789</color>
+</resources>

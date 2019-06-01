@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".login_sector">
+
+    <ImageView
+        android:id="@+id/cover_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/cover"
+        android:paddingBottom="75dp"
+        app:srcCompat="@mipmap/logo_flat" />
+
+    <EditText
+        android:id="@+id/insert_email"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_loginfield"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorHeaven"
+        android:textColorHint="@color/colorLogin"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/insert_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:background="@drawable/ic_loginfield"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorHeaven"
+        android:textColorHint="@color/colorLogin" tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/password_recover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/forgot"
+        android:textColor="@color/colorHeaven" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/ic_buttonsquare"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorField"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_loginfield"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLogin"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

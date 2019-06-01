@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".register_sector">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logo_flat" />
+
+    <EditText
+        android:id="@+id/user_register"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_loginfield"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorHeaven"
+        android:textColorHint="@color/colorLogin" />
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_loginfield"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorHeaven"
+        android:textColorHint="@color/colorLogin" />
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_loginfield"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorHeaven"
+        android:textColorHint="@color/colorLogin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/phone_register"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_loginfield"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:textColor="@color/colorHeaven"
+            android:textColorHint="@color/colorLogin" />
+
+        <EditText
+            android:id="@+id/matric_register"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_loginfield"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Matric"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorHeaven"
+            android:textColorHint="@color/colorLogin" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_buttonsquare"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/colorField"
+        android:textSize="16sp" />
+
+</LinearLayout>

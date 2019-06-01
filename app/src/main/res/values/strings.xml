@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Broccoli</string>
+    <string name="title_activity_main_sector">main_sector</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="top">Top\'s Pick</string>
+    <string name="browse">Browse</string>
+    <string name="profile">Profile</string>
+    <string name="main_logo">Logo</string>
+    <string name="cover">Cover Logo</string>
+    <string name="forgot_password" />
+    <string name="forgot">Forgot Password?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="application_name">lepakIntern.</string>
+    <string name="Lepak_Intern">lepakIntern.</string>
+
+    <string-array name="compavailability">
+        <item>All</item>
+        <item>Available</item>
+        <item>Unavailable</item>
+    </string-array>
+
+</resources>

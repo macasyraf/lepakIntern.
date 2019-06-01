@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/ic_loginfield"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/alternative_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/view_Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Successfully registered a new account and now you may login."
+            android:textColor="@color/colorHeaven"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/view_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_buttonsquare"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textColor="@color/colorField"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
