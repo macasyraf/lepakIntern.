@@ -40,7 +40,7 @@ public class login_sector extends AppCompatActivity
 
         failed = new Dialog(this, android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar_MinWidth);
         failed.setContentView(R.layout.popup_failed);
-        buttonClose = failed.findViewById(R.id.close_button);
+        buttonClose = failed.findViewById(R.id.exit_button);
         failed.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         
         Window window = this.getWindow();
@@ -124,7 +124,12 @@ public class login_sector extends AppCompatActivity
 
                 else if (framing.length() > 7)
                 {
+                    String[] val = framing.split(",");
                     Intent intent = new Intent(login_sector.this, main_sector.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("username", val[0]);
+                    bundle.putString("email", email);
+                    intent.putExtras(bundle);
                     startActivity(intent);
                     finish();
                 }

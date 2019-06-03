@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="We are sending you the validation code to your provided email."
+            android:text="There is no exact email mentioned has been registered in our database."
             android:textColor="@color/colorHeaven"
             android:textSize="18sp" />
 

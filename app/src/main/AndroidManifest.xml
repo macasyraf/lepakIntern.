@@ -35,6 +35,10 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".profile_edit"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".splash_screen"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait">

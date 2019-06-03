@@ -33,6 +33,7 @@ import java.util.HashMap;
 
 public class main_sector extends AppCompatActivity
 {
+    String email, username;
     ListView lvComp;
     Dialog viewComp;
     Button viewClose;
@@ -53,6 +54,10 @@ public class main_sector extends AppCompatActivity
                     return true;
                 case R.id.navigation_profile:
                     Intent inProfile = new Intent(main_sector.this, profile_sector.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("username",username);
+                    bundle.putString("email",email);
+                    inProfile.putExtras(bundle);
                     startActivity(inProfile);
                     return true;
             }
@@ -70,6 +75,11 @@ public class main_sector extends AppCompatActivity
         setContentView(R.layout.activity_main_sector);
         lvComp = findViewById(R.id.jobList);
         loadCompany(allView);
+
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        username = bundle.getString("username");
+        email = bundle.getString("email");
 
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -97,7 +107,7 @@ public class main_sector extends AppCompatActivity
         TextView officialName, officialSalary, compName, compWebsite, compContact, compLocation, compSalary, compTask, compAvailability;
         final ImageView compImage = viewComp.findViewById(R.id.compImage);
         final String compId = compList.get(position).get("compid");
-        officialName = viewComp.findViewById(R.id.view_Info);
+        officialName = viewComp.findViewById(R.id.view_failure);
         officialSalary = viewComp.findViewById(R.id.view_Salary);
         compName = viewComp.findViewById(R.id.compName);
         compWebsite = viewComp.findViewById(R.id.compWebsite);

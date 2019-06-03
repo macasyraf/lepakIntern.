@@ -6,7 +6,143 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    tools:context=".main_sector">
+    tools:context=".profile_edit">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/main_navigation"
@@ -43,89 +179,87 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="645dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="60dp"
-            android:orientation="horizontal">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profilePicture"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                tools:src="@tools:sample/avatars[0]"
-                tools:srcCompat="@tools:sample/avatars[0]" />
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="23dp"
-                android:layout_weight="2000"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/username"
+                    android:id="@+id/textProfile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="1"
-                    android:text="Username"
-                    android:textColor="@color/colorLogin"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="username@example.com"
+                    android:text=" Edit Profile"
                     android:textColor="@color/colorHeaven"
-                    android:textSize="14sp" />
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/matric"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/profile"
+                    android:textColor="@color/colorLogin"
+                    android:textSize="18sp" />
             </LinearLayout>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="513dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="-30dp"
-            android:layout_marginRight="20dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/editProfile"
+            <EditText
+                android:id="@+id/editEmail"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="fill_vertical"
-                android:text=" Edit Profile"
+                android:layout_height="55dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_loginfield"
+                android:ems="10"
+                android:gravity="center|center_vertical"
+                android:hint="@string/email"
+                android:inputType="textPersonName"
                 android:textColor="@color/colorHeaven"
-                android:textSize="16sp" />
+                android:textColorHint="@color/colorLogin" />
 
-            <TextView
-                android:id="@+id/wishlisted"
+            <EditText
+                android:id="@+id/editPhone"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="fill_vertical"
-                android:text=" Wishlisted"
+                android:layout_height="55dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_loginfield"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Phone"
+                android:inputType="textPersonName"
                 android:textColor="@color/colorHeaven"
-                android:textSize="16sp" />
+                android:textColorHint="@color/colorLogin" />
 
-            <TextView
-                android:id="@+id/about"
+            <EditText
+                android:id="@+id/oldPassword"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="fill_vertical"
-                android:text=" About Application"
+                android:layout_height="55dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0"
+                android:background="@drawable/ic_loginfield"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Current Password"
+                android:inputType="textPassword"
                 android:textColor="@color/colorHeaven"
-                android:textSize="16sp" />
+                android:textColorHint="@color/colorLogin" />
 
-            <TextView
-                android:id="@+id/logout"
+            <Button
+                android:id="@+id/buttonUpdate"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="fill_vertical"
-                android:text="Account Logout"
-                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_buttonsquare"
+                android:text="Edit Profile"
+                android:textAllCaps="false"
                 android:textSize="16sp" />
         </LinearLayout>
 
